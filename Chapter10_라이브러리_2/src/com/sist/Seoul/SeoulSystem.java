@@ -31,6 +31,11 @@ public class SeoulSystem {
 				vo.setAddress(st.nextToken());
 				datas.add(vo);
 			}
+			for(Object obj:locations)
+    		{
+    			SeoulLocationVO vo=(SeoulLocationVO)obj;
+    			System.out.println(vo.toString());
+    		}
 		}catch(Exception ex) {}	
 		
 	}
