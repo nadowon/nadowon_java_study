@@ -23,9 +23,18 @@ public class 라이브러리_String_4 {
 			break;
 		}
 		System.out.println("data="+data);
+		
+		boolean bCheck=true;
+		for(int i=0;i<data.length()/2;i++) {
+			if(data.charAt(i)!=data.charAt(data.length()-1-i)) {
+				bCheck=false;
+				break;
+			}
+		}
+		
 //		boolean bCheck=false;
+//		int j=data.length()-1;
 //		for(int i=0;i<data.length()/2;i++) {
-//			int j=data.length()-1;
 //			if(data.charAt(i)==data.charAt(j)) 
 //				bCheck=true;
 //			else {
@@ -34,17 +43,25 @@ public class 라이브러리_String_4 {
 //			}
 //			j--;
 //		}
-		boolean bCheck=false;
-		for(int i=0;i<data.length()/2;i++) {
-			char s=data.charAt(i);
-			char e=data.charAt(data.length()-1-i);
-			if(s==e)
-				bCheck=true;
-			else {
-				bCheck=false;
-				break;
-			}
-		}
+		
+//		boolean bCheck=true;
+//		for(int i=0;i<data.length()/2;i++) {
+//			int j=data.length()-1-i;
+//			if(data.charAt(i)!=data.charAt(j)) 
+//				bCheck=false;
+//				
+//		}
+//		boolean bCheck=false;
+//		for(int i=0;i<data.length()/2;i++) {
+//			char s=data.charAt(i);
+//			char e=data.charAt(data.length()-1-i);
+//			if(s==e)
+//				bCheck=true;
+//			else {
+//				bCheck=false;
+//				break;
+//			}
+//		}
 		if(bCheck==true) {
 			System.out.println(data+"는 좌우대칭입니다");
 		}
