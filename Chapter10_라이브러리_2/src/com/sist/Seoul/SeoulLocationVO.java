@@ -1,6 +1,7 @@
 package com.sist.Seoul;
 // 서울 명소의 데이터형(읽기/쓰기)
 // VO -> JSP -> bean 핵심기능
+
 public class SeoulLocationVO {
 	private int no;
 	private String name;
