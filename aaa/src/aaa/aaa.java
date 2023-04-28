@@ -1,5 +1,12 @@
 package aaa;
+<<<<<<< HEAD
 /////.///
+=======
+
+
+
+
+>>>>>>> refs/heads/master
 public class aaa {
 //
 	public static void main(String[] args) {
