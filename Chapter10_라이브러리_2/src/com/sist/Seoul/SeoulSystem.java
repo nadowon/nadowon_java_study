@@ -76,7 +76,7 @@ public class SeoulSystem {
 			 int menu=menu();
 			 
 			 if(menu==9) {
-				 System.out.println("Promgram is quite!!");
+				 System.out.println("Program is quite!!");
 				 break;
 			 }
 
