@@ -9,9 +9,10 @@ import java.util.*;
 import java.util.List;
 
 import com.sist.common.ImageChange;
+import com.sist.inter.FindInterface;
 import com.sist.manager.*;
 import java.awt.event.*;
-public class FindPanel extends JPanel implements ActionListener{
+public class FindPanel extends JPanel implements ActionListener,FindInterface{
 	JTextField tf;
 	JButton b1; // 기본 검색 버튼
 	JButton b2,b3,b4,b5,b6,b7; // 장르별 버튼
@@ -104,7 +105,6 @@ public class FindPanel extends JPanel implements ActionListener{
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
-		
 		if(e.getSource()==b2) {
 			findPrint(1);
 		}

@@ -41,7 +41,7 @@ public class DataCollectionManager {
 		FileOutputStream fos=null;
 		ObjectOutputStream oos=null;
 		try {
-			fos=new FileOutputStream("c:\\java.datas\\genie_music.txt");
+			fos=new FileOutputStream("c:\\java_datas\\genie_music.txt");
 			oos=new ObjectOutputStream(fos);
 			// 사이트 연결
 			String[] urls= {
